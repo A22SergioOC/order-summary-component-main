@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700&display=swap');
+
+html{
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: repeat no-repeat;
+    background-size: contain;
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 450px) {
+
+    html{
+        background-image: none;
+    }
+
+    .body{
+        width: 350px;
+    }
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.body{
+    background-color: white;
+    width: 425px;
+    height: 625px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 0px hsl(224, 23%, 55%);
+
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img[alt="A girl dancing with headphones"]{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 425px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box>p{
+    width: 300px;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+.text-box>h1{
+    font-size: 30px;
+    margin: 20px;
+    font-weight: bold;
+    color: hsl(223, 47%, 23%);
+}
+
+.box-plan{
+
+    height: 80px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 150px;
+}
+
+.buttons>*{
+    width: 75%;
+    height: 30%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.buttons :first-child{
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 12px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px 0px hsl(245, 75%, 52%);
+}
+
+.buttons :first-child:hover{
+    cursor: pointer;
+    background-color: hsl(245, 80%, 72%);
+    box-shadow: 5px 5px 10px 0px hsl(245, 80%, 72%);
+}
+
+.buttons :last-child{
+    background: none;
+    border: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: bold;
+}
+
+.buttons :last-child:hover{
+    cursor: pointer;
+    color: hsl(233, 16%, 11%);
+    font-size: 16px;
+}
+
+.attribution{
+    padding-top: 18px;
+}
+
+.attribution>a:hover{
+    color: hsl(245, 80%, 72%);
+    text-decoration: none;
+}
+
+#text{
+    padding-right: 100px;
+}
+
+#text :first-child{
+    color: hsl(223, 47%, 23%);
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+#text :last-child{
+    color: hsl(224, 23%, 55%);
+    margin-top: 0%;
+}
+
+#change_button{
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+}
+
+#change_button:hover{
+    text-decoration: none;
+    cursor: hand;
+    color:hsl(245, 80%, 72%);
+}
